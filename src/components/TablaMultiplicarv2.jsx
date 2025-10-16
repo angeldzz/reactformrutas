@@ -3,18 +3,22 @@ import React, { Component } from 'react'
 export default class TablaMultiplicarv2 extends Component {
     selectNumeros = React.createRef()
     state = {
-        aleatorios: [],
         resultados: [],
     }
-    componentDidMount = () => {
+    generarAleatorios(){
         let aleatoriosAUX = []
         for (let i = 0; i < 10; i++) {
             aleatoriosAUX.push(parseInt(Math.random() * 100 + 1));
         }
-        this.setState({
-            aleatorios:aleatoriosAUX,
-        })
+        return aleatoriosAUX;
     }
+    // Tambien se puede usar componentDidMount() => {} para ejecutar una funcion
+    componentDidMount = () => {
+        // esta funcion se ejecuta cuando carga el componente
+        console.log("Componente cargado")
+    }
+
+    aleatorios = this.generarAleatorios();
     generarTabla = (event) => {
         event.preventDefault();
         let aux = []
@@ -33,7 +37,7 @@ export default class TablaMultiplicarv2 extends Component {
             <label>Introduzca un numero</label>
             <select ref={this.selectNumeros}>
                 {
-                    this.state.aleatorios.map((numal,index)=>{
+                    this.aleatorios.map((numal,index)=>{
                         return(
                             <option key={index} value={numal}>{numal}</option>
                         )
