@@ -7,6 +7,7 @@ import FormSimple from './FormSimple';
 import Colatz from "./Collatz";
 import TablaMultiplicar from './TablaMultiplicar';
 import TablaMultiplicarv2 from './TablaMultiplicarv2';
+import SeleccionMultiple from './SeleccionMultiple';
 
 export default class Router extends Component {
   render() {
@@ -20,6 +21,7 @@ export default class Router extends Component {
             <Route path='/collatz' element={<Colatz/>}/>
             <Route path='/multiplicar' element={<TablaMultiplicar/>}/>
             <Route path='/multiplicarv2' element={<TablaMultiplicarv2/>}/>
+            <Route path='/seleccionMultiple' element={<SeleccionMultiple/>}/>
         </Routes>
         </BrowserRouter>
     )

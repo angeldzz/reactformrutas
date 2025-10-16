@@ -14,6 +14,7 @@ export default class MenuRutas extends Component {
         <li className="nav-item"><a href='/collatz' className="nav-link">Collatz</a></li>
         <li className="nav-item"><a href='/multiplicar' className="nav-link">Tabla Multiplicar</a></li>
         <li className="nav-item"><a href='/multiplicarv2' className="nav-link">Tabla Multiplicar v2</a></li>
+        <li className="nav-item"><a href='/seleccionMultiple' className="nav-link">Seleccion Multiple</a></li>
         </ul>
       </nav>
       </div>
