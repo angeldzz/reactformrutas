@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-
 export default class MenuRutas extends Component {
   render() {
     return (
@@ -9,6 +8,7 @@ export default class MenuRutas extends Component {
             <ul><a href='/cine'>CINE</a></ul>
             <ul><a href='/musica'>MUSICA</a></ul>
             <ul><a href='/formsimple'>Formulario</a></ul>
+            <ul><a href='/collatz'>Collatz</a></ul>
         </li>
       </div>
     )
